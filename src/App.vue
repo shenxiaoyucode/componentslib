@@ -46,15 +46,14 @@ export default {
     return {
       modalConfirm,
       modalClose,
-      getStarNum,
+      getStarNum
     }
-
   },
   components: {
     useCounter,
     useCardSlot,
     useStars,
-    useModal,
+    useModal
   }
 }
 </script>
