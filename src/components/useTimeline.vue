@@ -1,7 +1,8 @@
 <template>
     <div>
         <br /><br /><br />
-        <p>时间线组件，支持点击通过连接跳转</p>
+        <p>时间线组件</p>
+        <p>支持点击通过链接跳转</p>
         <Modal :title="title" :datas="datas"></Modal>
     </div>
 </template>
