@@ -197,7 +197,7 @@ export default {
   } 
   .modal-mask > .ui-modal > .btn-group > button {
     float: right; 
-    min-width: 80px;
+    width: 50px;
     height: 30px;
     font-size: 14px;
     border-radius: 3px;

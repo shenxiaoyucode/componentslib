@@ -13,8 +13,8 @@
       contentTextColor="#333"
       position="center"
       :btnGroupShow="true"
-      confirmText="是"
-      cancelText="否"
+      confirmText="确认"
+      cancelText="取消"
       @confirm="modalConfirm"
       @close="modalClose"
     ></Modal>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <br/><br/><br/>
-
+    <p>星星评分组件</p>
     <!-- 组件3：星星评分 -->
     <Stars
       :num="3"
