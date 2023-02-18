@@ -5,6 +5,7 @@
     <button @click="currentTabComponent='useCardSlot'">插槽组件</button>
     <button @click="currentTabComponent='useStars'">星星评分组件</button>
     <button @click="currentTabComponent='useModal'">模态框组件</button>
+    <button @click="currentTabComponent='useTimeline'">时间线组件</button>
     <keep-alive>
       <component v-bind:is="currentTabComponent"></component>
     </keep-alive>
@@ -22,6 +23,7 @@ import useCounter from './components/useCounter'
 import useCardSlot from './components/useCardSlot'
 import useStars from './components/useStars'
 import useModal from './components/useModal'
+import useTimeline from './components/useTimeline.vue'
 export default {
   name: 'App',
   data () {
@@ -53,7 +55,8 @@ export default {
     useCounter,
     useCardSlot,
     useStars,
-    useModal
+    useModal,
+    useTimeline
   }
 }
 </script>
@@ -80,7 +83,7 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 button {
-  background-color:orange;
+  background-color: orange;
   width: 150px;
   height: 40px;
   border-radius: 5px;

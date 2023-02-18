@@ -2,12 +2,14 @@ import NumberPlusOrSub from './NumberPlusOrSub'
 import CardSlot from './CardSlot'
 import Modal from './Modal'
 import Stars from './Stars'
+import Timeline from './Timeline'
 //全部全局注册
 const componnets = {
   NumberPlusOrSub,
   CardSlot,
   Modal,
-  Stars
+  Stars,
+  Timeline
 }
 export default {
   install (app) {
