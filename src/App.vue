@@ -1,30 +1,31 @@
 <template>
   <div id="app">
-    <br/><br/><br/>
-    <button @click="currentTabComponent='useCounter'">计数器组件</button>
-    <button @click="currentTabComponent='useCardSlot'">插槽组件</button>
-    <button @click="currentTabComponent='useStars'">星星评分组件</button>
-    <button @click="currentTabComponent='useModal'">模态框组件</button>
+    <br /><br /><br />
+    <button @click="currentTabComponent = 'useCounter'">计数器组件</button>
+    <button @click="currentTabComponent = 'useCardSlot'">插槽组件</button>
+    <button @click="currentTabComponent = 'useStars'">星星评分组件</button>
+    <button @click="currentTabComponent = 'useModal'">模态框组件</button>
+    <button @click="currentTabComponent = 'useTimeline'">时间线</button>
     <keep-alive>
       <component v-bind:is="currentTabComponent"></component>
     </keep-alive>
 
   </div>
-  <!-- <nav>
+<!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/> -->
-</template>
+  <router-view/> --></template>
 
 <script>
 import useCounter from './components/useCounter'
 import useCardSlot from './components/useCardSlot'
 import useStars from './components/useStars'
 import useModal from './components/useModal'
+import useTimeline from './components/useTimeline.vue'
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
       /* 这里指定初始值 */
       num: 0,
@@ -33,7 +34,7 @@ export default {
   },
   methods: {
   },
-  setup () {
+  setup() {
     const modalConfirm = () => {
       console.log('Modal Confirm');
     }
@@ -53,7 +54,8 @@ export default {
     useCounter,
     useCardSlot,
     useStars,
-    useModal
+    useModal,
+    useTimeline
   }
 }
 </script>
@@ -79,8 +81,9 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
 button {
-  background-color:orange;
+  background-color: orange;
   width: 150px;
   height: 40px;
   border-radius: 5px;
@@ -92,7 +95,8 @@ button {
   border-right: 3px solid #000;
   border-bottom: 3px solid #000;
 }
-button:hover{
-  background-color:rgb(252, 187, 67);
-} 
+
+button:hover {
+  background-color: rgb(252, 187, 67);
+}
 </style>
