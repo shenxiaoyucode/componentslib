@@ -133,7 +133,7 @@ export default {
     padding: 1rem;
     text-align: left;
 }
-@media (min-width: 900px) {
+@media (min-width:900px) {
     .timeline-year {
         margin: 0 auto;
         width: 850px;

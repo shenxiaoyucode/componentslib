@@ -30,12 +30,12 @@
     }
   }
 </script>
-<style scoped>
+<style>
   @font-face {
-  font-family: "iconfont"; /* Project id 3902604 */
-  src: url('//at.alicdn.com/t/c/font_3902604_m9sw9fdqc6.woff2?t=1676647987742') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3902604_m9sw9fdqc6.woff?t=1676647987742') format('woff'),
-       url('//at.alicdn.com/t/c/font_3902604_m9sw9fdqc6.ttf?t=1676647987742') format('truetype');
+  font-family: "iconfont"; /* Project id 3903599 */
+  src: url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.woff2?t=1676732278035') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.woff?t=1676732278035') format('woff'),
+       url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.ttf?t=1676732278035') format('truetype');
   }
 
   .iconfont {
@@ -49,13 +49,11 @@
   .icon-star {
     transition: color .3s;
   }
-  .icon-star:before {
-    content: "\e617";
-  }
   .active {
     color:gold;
   } 
-
-
+  .icon-star:after {
+    content: "\e86a";
+  }
 </style>
   
