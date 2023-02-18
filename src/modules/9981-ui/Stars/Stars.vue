@@ -34,9 +34,9 @@
 <style>
   @font-face {
   font-family: "iconfont"; /* Project id 3902604 */
-    src: url('@/assets/iconfont/iconfont.woff2') format('woff2'),
-       url('@/assets/iconfont/iconfont.woff') format('woff'),
-       url('@/assets/iconfont/iconfont.ttf') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_3902604_whrc6lwghsn.woff2?t=1676736211404') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3902604_whrc6lwghsn.woff?t=1676736211404') format('woff'),
+       url('//at.alicdn.com/t/c/font_3902604_whrc6lwghsn.ttf?t=1676736211404') format('truetype');
   }
 
   .iconfont {
