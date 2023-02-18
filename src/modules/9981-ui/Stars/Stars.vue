@@ -1,4 +1,4 @@
-<!-- 插槽卡片：可以指定卡片的 顶部标题、底部 以及多行的主要内容 -->
+<!-- 星星评分组件 -->
 <template>
   <div class="Stars">
     <span
@@ -13,6 +13,7 @@
   </div>
 </template>
 <script>
+
   export default {
     name:"Stars",
     props: {
@@ -32,10 +33,10 @@
 </script>
 <style>
   @font-face {
-  font-family: "iconfont"; /* Project id 3903599 */
-  src: url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.woff2?t=1676732278035') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.woff?t=1676732278035') format('woff'),
-       url('//at.alicdn.com/t/c/font_3903599_1b0o0sv3bh9.ttf?t=1676732278035') format('truetype');
+  font-family: "iconfont"; /* Project id 3902604 */
+    src: url('@/assets/iconfont/iconfont.woff2') format('woff2'),
+       url('@/assets/iconfont/iconfont.woff') format('woff'),
+       url('@/assets/iconfont/iconfont.ttf') format('truetype');
   }
 
   .iconfont {
@@ -46,14 +47,14 @@
     -moz-osx-font-smoothing: grayscale;
     color:darkgray
   }
+  .icon-star:before {
+    content: "\e617";
+  }
   .icon-star {
     transition: color .3s;
   }
   .active {
     color:gold;
   } 
-  .icon-star:after {
-    content: "\e86a";
-  }
+
 </style>
-  
